@@ -54,3 +54,8 @@ curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"
 ```
 
 ## How to publish notifications to the app using nodejs
+
+```sh
+# Print sample messages to a channel your app is a member of
+SLACK_TOKEN=${SLACK_TOKEN} CHANNEL_ID=${CHANNEL_ID} node slackMessage.ts
+```

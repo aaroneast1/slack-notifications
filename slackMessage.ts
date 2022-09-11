@@ -1,6 +1,7 @@
 // Require the Node Slack SDK package (github.com/slackapi/node-slack-sdk)
 const { WebClient, LogLevel } = require("@slack/web-api");
 const slackToken = process.env["SLACK_TOKEN"];
+const channelId = process.env["CHANNEL_ID"];
 const dayjs = require('dayjs')
 const util = require('util')
 
@@ -145,7 +146,7 @@ let failMsg = buildCiMessage("Hello World CI Job",
   new URL("https://www.google.com"), 
   new URL("https://www.google.com"))
 
-publishMessage("C041VA8KTR9", failMsg);
+publishMessage(channelId, failMsg);
 
 let successMsg = buildCiMessage("Hello World CI Job", 
   false, 
@@ -155,4 +156,4 @@ let successMsg = buildCiMessage("Hello World CI Job",
   new URL("https://www.google.com"), 
   new URL("https://www.google.com"))
 
-publishMessage("C041VA8KTR9", successMsg);
+publishMessage(channelId, successMsg);
