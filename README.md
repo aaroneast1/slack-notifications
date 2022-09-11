@@ -20,6 +20,8 @@ This is an example project of how to setup a basic app and push notifications to
    5. Verify installation has worked by going to *incoming webhooks* and executing the curl command.
    6. Go to *basic information* to add an app icon alter the background etc.
 4. Use supplied Manifest (simply import text below)
+5. Right click on the channel > view channel details > integrations > install your app
+6. How to get channel ID.  Click on a message in a channel > press 3 dots > copy link https://${WORKSPACE}.slack.com/archives/{CHANNEL_ID}/{MESSAGE_ID}
 
 ## Import app manifest file
 
@@ -47,8 +49,8 @@ settings:
 ## Verify slack app receives notifications
 
 ```sh
+# See incoming webhooks
 curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/${WORKSPACE_ID}/${TOKEN}
 ```
-
 
 ## How to publish notifications to the app using nodejs
