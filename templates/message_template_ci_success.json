@@ -1,73 +1,71 @@
-{
-	"blocks": [
-		{
-			"type": "header",
-			"text": {
-				"type": "plain_text",
-				"text": "Hello world CI Job",
-				"emoji": true
-			}
-		},
-		{
-			"type": "context",
-			"elements": [
-				{
-					"type": "image",
-					"image_url": "https://www.seekpng.com/png/small/0-4640_image-royalty-free-clipart-check-mark-green-check.png",
-					"alt_text": "JOB SUCCESS"
-				},
-				{
-					"type": "mrkdwn",
-					"text": "*JOB SUCCESS* :thumbsup: :thumbsup: "
-				}
-			]
-		},
-		{
-			"type": "section",
-			"fields": [
-				{
-					"type": "mrkdwn",
-					"text": "*Who:*\nAaron East"
-				},
-				{
-					"type": "mrkdwn",
-					"text": "*When:*\n11-Sept-2022 10:44 BST"
-				}
-			]
-		},
-		{
-			"type": "section",
-			"text": {
-				"type": "mrkdwn",
-				"text": "*Reason:*\n```This is a mrkdwn section block :ghost: *this is bold*, and ~this is crossed out~, and <https://google.com|this is a link>```"
-			}
-		},
-		{
-			"type": "actions",
-			"elements": [
-				{
-					"type": "button",
-					"text": {
-						"type": "plain_text",
-						"text": "View Git Commit",
-						"emoji": true
-					},
-					"value": "click_me_123",
-					"url": "https://google.com",
-					"action_id": "actionId-0"
-				},
-				{
-					"type": "button",
-					"text": {
-						"type": "plain_text",
-						"text": "View Job Log",
-						"emoji": true
-					},
-					"value": "click_me_1234",
-					"url": "https://google.com",
-					"action_id": "actionId-01"
-				}
-			]
+[
+	{
+		"type": "header",
+		"text": {
+			"type": "plain_text",
+			"text": "Hello world CI Job",
+			"emoji": true
 		}
-	]
-}
+	},
+	{
+		"type": "context",
+		"elements": [
+			{
+				"type": "image",
+				"image_url": "https://www.seekpng.com/png/small/0-4640_image-royalty-free-clipart-check-mark-green-check.png",
+				"alt_text": "JOB SUCCESS"
+			},
+			{
+				"type": "mrkdwn",
+				"text": "*JOB SUCCESS* :thumbsup: :thumbsup: "
+			}
+		]
+	},
+	{
+		"type": "section",
+		"fields": [
+			{
+				"type": "mrkdwn",
+				"text": "*Who:*\nAaron East"
+			},
+			{
+				"type": "mrkdwn",
+				"text": "*When:*\n11-Sept-2022 10:44 BST"
+			}
+		]
+	},
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": "*Reason:*\n```This is a mrkdwn section block :ghost: *this is bold*, and ~this is crossed out~, and <https://google.com|this is a link>```"
+		}
+	},
+	{
+		"type": "actions",
+		"elements": [
+			{
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"text": "View Git Commit",
+					"emoji": true
+				},
+				"value": "click_me_123",
+				"url": "https://google.com",
+				"action_id": "actionId-0"
+			},
+			{
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"text": "View Job Log",
+					"emoji": true
+				},
+				"value": "click_me_1234",
+				"url": "https://google.com",
+				"action_id": "actionId-01"
+			}
+		]
+	}
+]
