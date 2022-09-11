@@ -1,4 +1,4 @@
-# Example project on how to setup notifications in Slack for CI
+# How-to project to setup notifications in Slack for CI
 
 This is an example project of how to setup a basic app and push notifications to set app.
 
